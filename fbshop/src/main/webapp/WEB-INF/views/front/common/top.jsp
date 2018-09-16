@@ -40,7 +40,7 @@ li a {
     <a href="#" class="w3-left w3-button w3-white">NOTICE</a>
     <a href="/faq/faqForm" class="w3-left w3-button w3-white">FAQ</a>
     <a href="/review/reviewForm" class="w3-left w3-button w3-white">REVIEW</a>
-    <a href="/user/userJoinAgreeForm" class="w3-right w3-button w3-white">회원가입</a>
+    <a href="/user/userJoinAgreeForm.do" class="w3-right w3-button w3-white">회원가입</a>
     <a href="/user/userLoginForm" class="w3-right w3-button w3-white">로그인</a>
     <a href="/user/userJoinForm" class="w3-right w3-button w3-white">장바구니</a>
     <a href="/review/reviewForm" class="w3-right w3-button w3-white">주문조회</a>
