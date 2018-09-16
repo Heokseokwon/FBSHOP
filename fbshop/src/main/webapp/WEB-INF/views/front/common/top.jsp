@@ -4,36 +4,65 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Top.jsp</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+<style>
+body {font-family: "Raleway", Arial, sans-serif}
+.w3-row img {margin-bottom: -8px}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1c205f;
+    height: 100px;
+}
+li {
+    float: left;
+    padding-left:200px;
+    padding-top:40px;
+}
+
+li a {
+   text-decoration: none;
+   color: white;
+   font-size: 20px;
+   font-weight: bold;
+}
+</style>
 </head>
 <body>
-<table width="960" height="200" align="center">
-<tr>
-  <td height="43" align="center"  >
-     <a class="left" id="notice" href="notice.jsp">공지사항</a>
-     <a class="left" id="faq" href="/faq/faqForm">FAQ</a>
-     <a class="left" id="review" href="/review/reviewForm">리뷰</a>
-     <a class="right" id="agree" href="/user/userJoinForm">회원가입</a> 
-  	 <a class="right" id="login1" href="/user/userLoginForm">로그인</a> 
-  	 <a class="right" id="basket" href="#">장바구니</a>
-     <a class="right" id="order" href="#">주문조회</a>
-<div id="logo">
-<a href="main.jsp"><img src="<%=request.getContextPath()%>/resources/image/logo.gif" width="300" height="123" ></a>
+
+<div class="w3-content" style="max-width:1500px">
+<!-- Header -->
+  <header class="w3-container w3-xlarge w3-padding-24">
+    <a href="#" class="w3-left w3-button w3-white">NOTICE</a>
+    <a href="/faq/faqForm" class="w3-left w3-button w3-white">FAQ</a>
+    <a href="/review/reviewForm" class="w3-left w3-button w3-white">REVIEW</a>
+    <a href="/user/userJoinAgreeForm" class="w3-right w3-button w3-white">회원가입</a>
+    <a href="/user/userLoginForm" class="w3-right w3-button w3-white">로그인</a>
+    <a href="/user/userJoinForm" class="w3-right w3-button w3-white">장바구니</a>
+    <a href="/review/reviewForm" class="w3-right w3-button w3-white">주문조회</a>
+  </header>
+  
+   <div class="w3-row">
+    <div class="w3-half" style="width:100%;text-align:center;">
+     <a href="/home/main"><img src="<%=request.getContextPath()%>/resources/image/logo.gif" style="width:400px;"></a>
+    </div>
+   </div>
+   
+  <ul>
+      <li><a href="#home">소개</a></li>
+      <li><a href="#news">클럽몰</a></li>
+      <li><a href="#contact">단체관람</a></li>
+      <li><a href="#about">특별세일</a></li>
+      <li><a href="#about">이벤트</a></li>
+  </ul>   
+  
+    <div style="text-align:center;padding-top:20px;">
+		<img src="<%=request.getContextPath()%>/resources/image/banner2.jpg" style="height:100px;"/>
+	</div> 
 </div>
-</td>
- </tr>
- </table>
- 
- <table width="1600"  align="center">
- <tr id="menu" >
-  <td align="left" width="100%">
-   <a class="sub" id="site" href="siteInfo.jsp">사이트 소개</a>
-   <a class="sub" id="club" href="clubMall.jsp">클럽몰</a>
-   <a class="sub" id="view" href="groupViewing.jsp">단체 관람</a>
-   <a class="sub" id="sale" href="sale.jsp">특별 세일</a>
-    <a class="sub" id="event" href="toto.jsp">이벤트</a>
-  </td>
- </tr>
-</table>
 </body>
 </html>

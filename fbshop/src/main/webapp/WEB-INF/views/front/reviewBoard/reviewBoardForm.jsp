@@ -17,9 +17,6 @@
  <%--상단 메뉴--%>
     <%@ include file="../common/top.jsp" %>   
  <%--리뷰 게시판 화면 내용--%>
- <div id="banner" align="center">
-   <img src="<%=request.getContextPath()%>/resources/image/banner2.jpg" width="1000" height="110" >
- </div>
  <div id="help" >홈 > 리뷰게시판</div>
 <div>
   <div class="row">

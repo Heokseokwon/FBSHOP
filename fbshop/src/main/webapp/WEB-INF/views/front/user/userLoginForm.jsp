@@ -11,9 +11,6 @@
 <%--상단 메뉴--%>
     <%@ include file="../common/top.jsp" %>   
  <%--로그인 화면 내용--%>
- <div id="banner" align="center">
-   <img src="<%=request.getContextPath()%>/resources/image/banner2.jpg" width="1000" height="110" >
- </div>
  <div id="help" >홈 > 로그인</div>
 <form action="loginAction.jsp" method="post"><!-- 로그인 완료 시 메인화면인 main.jsp파일로 넘어간다. -->
  <table id="form"  width="960" align="center">

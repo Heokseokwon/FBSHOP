@@ -90,10 +90,20 @@
   }
   #bm {
    position: relative;
-   top: 50px;
+   top: 500px;
    border-top: 1px solid;
   }
-  #banner {
+  #form {
+  position: relative;
+  top: 80px;
+  }
+  #bt {
+  position: relative;
+  top: 10px;
+  left: 400px;
+ 
+  }
+   #banner {
    position: relative;
    top: 40px; 
   }
@@ -106,125 +116,29 @@
    width: 1000px;
    height: 30px; 
    font-weight: bold;
-   line-height: 30px;/*Áß¾Ó¿¡ Á¤·Ä*/
+   line-height: 30px;
  
   }
-  #agr {
-    position: relative;
-    bottom: 60px;
-   }
-
-   #info {
-    position: relative;
-    bottom: 95px;
-   }
-
-   #ment1 {
-        position: relative;
-        background: rgba(52, 152, 219, 0.51);
-        width: 800px;
-        margin: 20px 20px 20px 0px;
-        padding:20px;
-        text-align: center;
-        font-weight : bold;
-        color: rgb(28,32,95);
-        top:90px;
-        left: 320px;
-        width: 960px;
-        height: 50px;
-        line-height: 50px;
-
-    }
-    #ment21 {
+  #ment21 {
         position: relative;
         color: rgb(28,32,95);
         font-weight : bold;
-        top:190px;
+        top:80px;
         left: 330px;
     
     }
-    #ment22 {
-        position: relative;
-        color: rgb(28,32,95);
-        font-weight : bold;
-        top:-90px;
-        left: 330px;
-    }
-    #line1 {
+     #line1 {
         position: relative;
         background: rgb(28,32,95);
         height: 5px;
         width: 990px;
-        top:180px;
+        top:70px;
         left: 320px;
         
-    }
-    #line2 {
-        position: relative;
-        background: rgb(28,32,95);
-        height: 5px;
-        width: 990px;
-        top:-100px;
-        left: 320px;
-        
-    }
-    #boxx1{
-        position: relative;
-        width: 840px;
-        height: 400px;
-        background: rgb(224, 224, 224);
-        top:200px;
-        left: 390px;
-
-    }
-    #boxx2{
-        position: relative;
-        width: 840px;
-        height: 400px;
-        background: rgb(224, 224, 224);
-        top:-80px;
-        left: 390px;
-    }
-    #box21 {
-        position: relative;
-        width: 780px;
-        height: 320px;
-        left: 415px;
-        top:-180px;
-    }
-    #box22 {
-        position: relative;
-        width: 780px;
-        height: 320px;
-        left: 415px;
-        top:-460px;
-    }
-    #box31 {
-        position: relative;
-        bottom : 50px;
-        left: 425px;
-        top:-175px;
-
-
-    }
-    #box32 {
-        position: relative;
-        bottom : 50px;
-        left: 425px;
-        top:-455px;
-
     }
     
-    #btn {
-        position: relative;
-        background: rgb(28,32,95);
-        bottom: 370px;
-        left: 680px; 
-        color: white;
-        width:100px;
-        height:40px;
-        border-radius: 5px;
-        text-align: center;
-        font-weight: bold;
-
+    #dataform {
+	    color: rgb(28,32,95);
+	    font-weight: bold;
     }
+  

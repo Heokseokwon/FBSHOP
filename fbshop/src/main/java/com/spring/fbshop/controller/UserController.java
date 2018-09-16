@@ -14,16 +14,22 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping("/user")
 public class UserController {
 	
-	@RequestMapping(value = "/userJoinForm", method = RequestMethod.GET)
-	public String userJoinForm(Locale locale, Model model) {
+	@RequestMapping(value = "/userJoinAgreeForm", method = RequestMethod.GET)
+	public String userJoinAgreeForm(Locale locale, Model model) {
 		
-		return "/front/user/userJoinForm";
+		return "/front/user/userJoinAgreeForm";
 	}
 	
 	@RequestMapping(value = "/userLoginForm", method = RequestMethod.GET)
 	public String userLoginForm(Locale locale, Model model) {
 		
 		return "/front/user/userLoginForm";
+	}
+	
+	@RequestMapping(value = "/userJoinForm", method = RequestMethod.GET)
+	public String userJoinForm(Locale locale, Model model) {
+		
+		return "/front/user/userJoinForm";
 	}
 	
 	

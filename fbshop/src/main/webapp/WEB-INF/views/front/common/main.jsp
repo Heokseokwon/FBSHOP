@@ -4,26 +4,27 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>main.jsp</title>
-<link href="<%=request.getContextPath()%>/resources/css/main.css" rel="stylesheet" type="text/css">
+<title>국내 스포츠 Online 스토어 1위! FB Word</title>
 </head>
 <body>
-<%--상단 메뉴--%>
-  <%@ include file="top.jsp" %>
- <%--메인 내용--%>
-<table width="960"  align="center">
- <tr>
-  <td height="500" align="center">
-      <%@ include file="mainPage.jsp" %>
-  </td>
- </tr>
-  <%--FOOTER--%>
- <tr>
-  <td id="bm" >
-      <%@ include file="bottom.jsp" %>
-  </td>
-</tr>
+<div class="w3-container" align="center">
 
-</table>
+  <%--상단 메뉴--%>
+  <div class="w3-container">
+      <%@ include file="top.jsp" %>
+  </div>
+  
+  <%--메인 내용--%>
+  <div class="w3-container">
+	<div>
+	    <img src="<%=request.getContextPath()%>/resources/image/banner.png" style= "max-width:909px;"/>
+	</div>
+  </div>
+  
+  <%-- 하단 메뉴 --%>
+  <div class="w3-container">
+      <%@ include file="bottom.jsp" %>
+  </div>
+</div>
 </body>
 </html>
