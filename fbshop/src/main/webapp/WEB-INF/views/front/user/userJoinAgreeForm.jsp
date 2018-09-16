@@ -26,16 +26,21 @@ function nochk(){
 <link href="<%=request.getContextPath()%>/resources/css/userJoinAgreeForm.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<%--상단 메뉴--%>
-    <%@ include file="../common/top.jsp" %>    
- <%--약관동의 화면 내용--%>
-<div id="help" >홈 > 약관동의</div>
- <p id="ment1">회원가입 약관 내용에 동의 하셔야 회원가입 할 수 있습니다.</p>
-<form action="userJoinForm" name="form" method="post"><!-- 약관 동의 시 회원가입화면인 join.jsp파일로 넘어간다. -->
-    <div id="agr">
-    <p id="ment21">이용약관 동의</p>
-    <p id="line1"></p>
-    <p id="boxx1"></p>
+<div class="w3-container" align="center">
+
+    <%--상단 메뉴--%>
+    <div class="w3-container">
+        <%@ include file="../common/top.jsp" %>
+    </div> 
+    
+    <%--약관동의 화면 내용--%>
+    <form class="w3-container" style="max-width:1200px">
+        <div id="help" >홈 > 약관동의</div>
+        <p id="ment1">회원가입 약관 내용에 동의 하셔야 회원가입 할 수 있습니다.</p>
+        <div id="agr">
+            <p id="ment21">이용약관 동의</p>
+            <p id="line1"></p>
+            <p id="boxx1">
      <%--이용약관 내용--%>
         <textarea id="box21">제1조(목적)
 이 약관은 (주)ㅇㅇ 회사(전자상거래 사업자)가 운영하는 풋볼월드 (이하 “월드”이라 한다)에서 제공하는 인터넷 관련 서비스(이하 “서비스”라 한다)를 이용함에 있어 사이버 월드과 이용자의 권리 및 의무 및 책임사항을 규정함을 목적으로 합니다.
@@ -154,26 +159,20 @@ function nochk(){
 
 ②“월드”은 이용자가 구매한 재화에 대해 배송수단, 수단별 배송비용 부담자, 수단별 배송기간 등을 명시합니다. 만약 “월드”이 약정 배송기간을 초과한 경우에는 그로 인한 이용자의 손해를 배상하여야 합니다. 다만 “월드”이 고의?과실이 없음을 입증한 경우에는 그러하지 아니합니다.
 
-부 칙(시행일) 이 약관은 년 월 일부터 시행합니다.</textarea>
+부 칙(시행일) 이 약관은 년 월 일부터 시행합니다.</textarea></p>
         
-      <div id="box31">이용약관에 동의하십니까?<input type="checkbox"  name="req" ></div>
-    </div>
+          <div id="box31">이용약관에 동의하십니까?<input type="checkbox"  name="req" ></div>
+        </div>
    
-    <input type="button" value="동의" id="btn"  onclick="chk()"/>&nbsp;&nbsp;&nbsp;
-    <input type="button" value="동의하지 않음" id="btn"  onclick="nochk()"/>
-    
-
-</form>
+        <input type="button" value="동의" id="btn"  onclick="chk()"/>&nbsp;&nbsp;&nbsp;
+        <input type="button" value="동의하지 않음" id="btn"  onclick="nochk()"/>
+    </form>
 
 
- <%--FOOTER--%>
-<table width="960"  align="center">
- <tr>
-  <td id="bm" >
-   <%@ include file="../common/bottom.jsp" %> 		
-  </td>
-</tr>
-</table>
-
+    <%--FOOTER--%>
+    <div class="w3-container"> 
+    <%@ include file="../common/bottom.jsp" %> 		
+    </div>
+</div>
 </body>
 </html>

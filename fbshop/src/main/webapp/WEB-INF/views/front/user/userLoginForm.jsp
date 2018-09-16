@@ -4,37 +4,48 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Login.jsp</title>
-<link href="<%=request.getContextPath()%>/resources/css/userLoginForm.css" rel="stylesheet" type="text/css">
+<title>국내 스포츠 Online 스토어 1위! FB Word</title>
+<style>
+  #help {
+   top: 60px;
+   background-color: #1c205f;
+   color: white;
+   width: 1000px;
+   height: 30px; 
+   font-weight: bold;
+   line-height: 30px;
+ 
+  }  
+</style>
 </head>
 <body>
+<div class="w3-container" align="center">
 <%--상단 메뉴--%>
-    <%@ include file="../common/top.jsp" %>   
- <%--로그인 화면 내용--%>
- <div id="help" >홈 > 로그인</div>
-<form action="loginAction.jsp" method="post"><!-- 로그인 완료 시 메인화면인 main.jsp파일로 넘어간다. -->
- <table id="form"  width="960" align="center">
-  <tr>
-   <td align="center">아이디</td>
-   <td><input type="text" name="member_id"></td>
-  </tr>
-  <tr>
-   <td align="center">비밀번호</td>
-   <td><input type="password" name="member_pwd"></td>
-  </tr>
-  <tr>
-   <td id="bt" align="center"><input type="submit" value="로그인"></td>
-  </tr>
- </table>
-</form>
+    <div class="w3-container">
+        <%@ include file="../common/top.jsp" %>
+    </div>
+           
+    <%--로그인 화면 내용--%>
+    <form class="w3-container" style="max-width:1200px">
+        <div id="help" >홈 > 로그인</div>
+        <div class="w3-container" style="background-color:#EAEAEA;">
+            <label class="w3-text"><b>아이디</b></label>
+            <input class="w3-input w3-border" type="text">
  
-  <%--FOOTER--%>
-  <table width="960" align="center">
- <tr>
-  <td id="bm" >
-   <%@ include file="../common/bottom.jsp" %> 		
-  </td>
-</tr>
-</table>
+            <label class="w3-text"><b>비밀번호</b></label>
+            <input class="w3-input w3-border" type="text">
+
+            <button class="w3-btn w3-blue">로그인</button><br>
+        
+            <label class="w3-text"><b>아이디 / 비밀번호 찾기</b></label>
+        </div>
+ 
+    </form>
+ 
+    <%--FOOTER--%>
+        <div class="w3-container">  
+            <%@ include file="../common/bottom.jsp" %>
+        </div>    	
+    </div>   	
 </body>
 </html>

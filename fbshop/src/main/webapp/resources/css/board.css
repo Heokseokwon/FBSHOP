@@ -98,8 +98,6 @@
    top: 40px; 
   }
   #help {
-   position: relative;
-   left: 320px;
    top: 60px;
    background-color: #1c205f;
    color: white;
@@ -115,8 +113,6 @@
 	top: 100px;
 }
 #tb{
-	position:relative;
-	left:335px;
 	top:100px;
 }
 #tb,#tb tr,#tb td {
