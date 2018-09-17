@@ -32,6 +32,8 @@ public class UserController {
 		
 		log.info("회원약관 페이지 진입");
 		
+		userService.test();
+		
 		model.setViewName("/front/user/userJoinAgreeForm"); // jsp 경로
 		
 		return model;

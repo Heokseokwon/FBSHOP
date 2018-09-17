@@ -13,5 +13,9 @@ public class UserDao {
 	public void insertUser() {
 		sqlSession.insert("user.inserUser");
 	}
+
+	public void test() {
+		sqlSession.selectOne("user.test");
+	}
 	
 }
